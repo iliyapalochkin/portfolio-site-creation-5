@@ -20,7 +20,7 @@ const Contact = () => {
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 hover-scale">
               <Icon name="Mail" size={32} className="text-white mx-auto mb-4" />
               <h3 className="text-xl font-semibold text-white mb-2">Email</h3>
-              <p className="text-purple-100">hello@webdesign.ru</p>
+              <p className="text-purple-100">palochkin.ilha@yandex.ru</p>
             </div>
 
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 hover-scale">
@@ -30,7 +30,7 @@ const Contact = () => {
                 className="text-white mx-auto mb-4"
               />
               <h3 className="text-xl font-semibold text-white mb-2">Телефон</h3>
-              <p className="text-purple-100">+7 (999) 123-45-67</p>
+              <p className="text-purple-100">89684515567</p>
             </div>
 
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 hover-scale">
@@ -42,14 +42,25 @@ const Contact = () => {
               <h3 className="text-xl font-semibold text-white mb-2">
                 Telegram
               </h3>
-              <p className="text-purple-100">@webdesigner</p>
+              <p className="text-purple-100">@Iliha_c</p>
             </div>
           </div>
 
-          <button className="bg-white text-primary px-8 py-4 rounded-full hover:bg-gray-100 transition-all hover-scale flex items-center gap-2 mx-auto">
-            <Icon name="Send" size={20} />
-            Написать сообщение
-          </button>
+          <div className="flex flex-col items-center gap-4">
+            <button className="bg-white text-primary px-8 py-4 rounded-full hover:bg-gray-100 transition-all hover-scale flex items-center gap-2">
+              <Icon name="Send" size={20} />
+              Написать сообщение
+            </button>
+
+            <a
+              href="https://t.me/Iliha_c"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-purple-100 hover:text-white transition-colors underline"
+            >
+              Telegram: https://t.me/Iliha_c
+            </a>
+          </div>
         </div>
       </div>
     </section>
