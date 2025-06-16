@@ -10,7 +10,7 @@ const Portfolio = () => {
       image:
         "https://cdn.poehali.dev/files/4f31070e-01a1-48c4-91fa-bb4372daa147.jpg",
       technologies: ["React", "TypeScript", "Framer Motion"],
-      link: "/project/artist-site",
+      link: "https://iliapalochkin.ru/",
     },
     {
       id: 2,
@@ -19,7 +19,7 @@ const Portfolio = () => {
       image:
         "https://cdn.poehali.dev/files/9ca7f042-f1dd-4f09-8763-47a1d00b2079.jpg",
       technologies: ["React", "Tailwind CSS", "React Router"],
-      link: "/project/fishing-base",
+      link: "https://kenguriba.ru/",
     },
   ];
 
@@ -67,10 +67,15 @@ const Portfolio = () => {
                   ))}
                 </div>
 
-                <button className="flex items-center gap-2 text-primary hover:text-primary/80 transition-colors story-link">
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-primary hover:text-primary/80 transition-colors story-link"
+                >
                   <span>Подробнее</span>
                   <Icon name="ArrowRight" size={16} />
-                </button>
+                </a>
               </div>
             </div>
           ))}
