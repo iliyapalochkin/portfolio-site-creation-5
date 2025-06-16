@@ -37,7 +37,12 @@ const Portfolio = () => {
               className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover-scale animate-fade-in"
               style={{ animationDelay: `${index * 0.2}s` }}
             >
-              <div className="relative overflow-hidden">
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="relative overflow-hidden block"
+              >
                 <img
                   src={project.image}
                   alt={project.title}
@@ -46,7 +51,7 @@ const Portfolio = () => {
                 <div className="absolute inset-0 bg-primary/0 hover:bg-primary/20 transition-all duration-300 flex items-center justify-center opacity-0 hover:opacity-100">
                   <Icon name="ExternalLink" size={32} className="text-white" />
                 </div>
-              </div>
+              </a>
 
               <div className="p-6">
                 <h3 className="text-2xl font-bold mb-3 font-montserrat">
