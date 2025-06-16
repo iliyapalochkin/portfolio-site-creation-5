@@ -67,10 +67,15 @@ const Hero = () => {
               <Icon name="Eye" size={20} />
               Посмотреть работы
             </button>
-            <button className="border-2 border-primary text-primary px-8 py-4 rounded-full hover:bg-primary hover:text-white transition-all hover-scale flex items-center gap-2">
+            <a
+              href="https://t.me/Iliha_c"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border-2 border-primary text-primary px-8 py-4 rounded-full hover:bg-primary hover:text-white transition-all hover-scale flex items-center gap-2"
+            >
               <Icon name="MessageCircle" size={20} />
               Обсудить проект
-            </button>
+            </a>
           </div>
 
           <div className="flex justify-center space-x-6 text-gray-500">

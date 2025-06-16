@@ -46,19 +46,15 @@ const Contact = () => {
             </div>
           </div>
 
-          <div className="flex flex-col items-center gap-4">
-            <button className="bg-white text-primary px-8 py-4 rounded-full hover:bg-gray-100 transition-all hover-scale flex items-center gap-2">
-              <Icon name="Send" size={20} />
-              Написать сообщение
-            </button>
-
+          <div className="flex justify-center">
             <a
               href="https://t.me/Iliha_c"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-purple-100 hover:text-white transition-colors underline"
+              className="bg-white text-primary px-8 py-4 rounded-full hover:bg-gray-100 transition-all hover-scale flex items-center gap-2"
             >
-              Telegram: https://t.me/Iliha_c
+              <Icon name="Send" size={20} />
+              Написать сообщение
             </a>
           </div>
         </div>
