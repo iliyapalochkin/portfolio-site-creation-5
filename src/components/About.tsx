@@ -43,28 +43,15 @@ const About = () => {
                 {skills.map((skill, index) => (
                   <div
                     key={skill.name}
-                    className="animate-fade-in"
+                    className="animate-fade-in flex items-center gap-2"
                     style={{ animationDelay: `${index * 0.1}s` }}
                   >
-                    <div className="flex items-center justify-between mb-2">
-                      <div className="flex items-center gap-2">
-                        <Icon
-                          name={skill.icon as any}
-                          size={20}
-                          className="text-primary"
-                        />
-                        <span className="font-medium">{skill.name}</span>
-                      </div>
-                      <span className="text-sm text-gray-500">
-                        {skill.level}%
-                      </span>
-                    </div>
-                    <div className="w-full bg-gray-200 rounded-full h-2">
-                      <div
-                        className="bg-primary rounded-full h-2 transition-all duration-1000"
-                        style={{ width: `${skill.level}%` }}
-                      />
-                    </div>
+                    <Icon
+                      name={skill.icon as any}
+                      size={20}
+                      className="text-primary"
+                    />
+                    <span className="font-medium">{skill.name}</span>
                   </div>
                 ))}
               </div>

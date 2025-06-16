@@ -3,6 +3,7 @@ import Icon from "@/components/ui/icon";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -56,9 +57,58 @@ const Header = () => {
           </div>
 
           <div className="md:hidden">
-            <Icon name="Menu" size={24} className="text-gray-700" />
+            <button
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              className="text-gray-700 hover:text-primary transition-colors"
+            >
+              <Icon name={isMobileMenuOpen ? "X" : "Menu"} size={24} />
+            </button>
           </div>
         </nav>
+
+        {/* Мобильное меню */}
+        {isMobileMenuOpen && (
+          <div className="md:hidden bg-white/95 backdrop-blur-md shadow-lg rounded-lg mt-2 p-4">
+            <div className="flex flex-col space-y-4">
+              <button
+                onClick={() => {
+                  scrollToSection("hero");
+                  setIsMobileMenuOpen(false);
+                }}
+                className="text-gray-700 hover:text-primary transition-colors text-left"
+              >
+                Главная
+              </button>
+              <button
+                onClick={() => {
+                  scrollToSection("about");
+                  setIsMobileMenuOpen(false);
+                }}
+                className="text-gray-700 hover:text-primary transition-colors text-left"
+              >
+                Обо мне
+              </button>
+              <button
+                onClick={() => {
+                  scrollToSection("portfolio");
+                  setIsMobileMenuOpen(false);
+                }}
+                className="text-gray-700 hover:text-primary transition-colors text-left"
+              >
+                Портфолио
+              </button>
+              <button
+                onClick={() => {
+                  scrollToSection("contact");
+                  setIsMobileMenuOpen(false);
+                }}
+                className="text-gray-700 hover:text-primary transition-colors text-left"
+              >
+                Контакты
+              </button>
+            </div>
+          </div>
+        )}
       </div>
     </header>
   );

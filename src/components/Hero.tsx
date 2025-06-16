@@ -52,7 +52,13 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-            <button className="bg-primary text-white px-8 py-4 rounded-full hover:bg-primary/90 transition-all hover-scale flex items-center gap-2">
+            <button
+              onClick={() => {
+                const element = document.getElementById("portfolio");
+                element?.scrollIntoView({ behavior: "smooth" });
+              }}
+              className="bg-primary text-white px-8 py-4 rounded-full hover:bg-primary/90 transition-all hover-scale flex items-center gap-2"
+            >
               <Icon name="Eye" size={20} />
               Посмотреть работы
             </button>
@@ -67,17 +73,7 @@ const Hero = () => {
             </a>
           </div>
 
-          <div className="flex justify-center space-x-6 text-gray-500">
-            <div className="hover-scale cursor-pointer">
-              <Icon name="Github" size={24} />
-            </div>
-            <div className="hover-scale cursor-pointer">
-              <Icon name="Linkedin" size={24} />
-            </div>
-            <div className="hover-scale cursor-pointer">
-              <Icon name="Mail" size={24} />
-            </div>
-          </div>
+          {/* Социальные иконки убраны */}
         </div>
       </div>
 
