@@ -43,6 +43,12 @@ const Header = () => {
               Обо мне
             </button>
             <button
+              onClick={() => scrollToSection("services")}
+              className="text-gray-700 hover:text-primary transition-colors story-link"
+            >
+              Услуги
+            </button>
+            <button
               onClick={() => scrollToSection("portfolio")}
               className="text-gray-700 hover:text-primary transition-colors story-link"
             >
@@ -87,6 +93,15 @@ const Header = () => {
                 className="text-gray-700 hover:text-primary transition-colors text-left"
               >
                 Обо мне
+              </button>
+              <button
+                onClick={() => {
+                  scrollToSection("services");
+                  setIsMobileMenuOpen(false);
+                }}
+                className="text-gray-700 hover:text-primary transition-colors text-left"
+              >
+                Услуги
               </button>
               <button
                 onClick={() => {
