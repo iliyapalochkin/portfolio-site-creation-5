@@ -8,7 +8,7 @@ const Portfolio = () => {
       description:
         "Персональный сайт музыканта с интерактивной галереей и аудиоплеером",
       image:
-        "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=600&h=400&fit=crop",
+        "https://cdn.poehali.dev/files/4f31070e-01a1-48c4-91fa-bb4372daa147.jpg",
       technologies: ["React", "TypeScript", "Framer Motion"],
       link: "/project/artist-site",
     },
@@ -17,7 +17,7 @@ const Portfolio = () => {
       title: "Рыболовная база КЕНГУРИБА",
       description: "Сайт рыболовной базы с бронированием и галереей природы",
       image:
-        "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&h=400&fit=crop",
+        "https://cdn.poehali.dev/files/9ca7f042-f1dd-4f09-8763-47a1d00b2079.jpg",
       technologies: ["React", "Tailwind CSS", "React Router"],
       link: "/project/fishing-base",
     },
