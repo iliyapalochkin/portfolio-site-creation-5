@@ -26,7 +26,7 @@ const Header = () => {
     >
       <div className="container mx-auto px-6 py-4">
         <nav className="flex justify-between items-center">
-          <div className="text-2xl font-bold text-primary">WebDesign</div>
+          <div className="text-2xl font-bold text-primary">ПалочкинДизайн</div>
 
           <div className="hidden md:flex space-x-8">
             <button

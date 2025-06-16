@@ -4,13 +4,13 @@ const Footer = () => {
       <div className="container mx-auto px-6">
         <div className="text-center">
           <div className="text-2xl font-bold mb-4 font-montserrat">
-            WebDesign
+            ПалочкинДизайн
           </div>
           <p className="text-gray-400 mb-6">
             Создаю веб-сайты, которые работают на результат
           </p>
           <div className="text-sm text-gray-500">
-            © 2024 WebDesign. Все права защищены.
+            © 2024 ПалочкинДизайн. Все права защищены.
           </div>
         </div>
       </div>
