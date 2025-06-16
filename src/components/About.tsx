@@ -29,9 +29,8 @@ const About = () => {
 
             <div className="space-y-6">
               <p className="text-lg text-gray-600 leading-relaxed">
-                Привет! Я веб-дизайнер с 5-летним опытом создания современных и
-                функциональных сайтов. Специализируюсь на React, TypeScript и
-                создании уникальных пользовательских интерфейсов.
+                Я - Илья Палочкин, и я создаю современные и функциональные
+                сайты.
               </p>
 
               <p className="text-lg text-gray-600 leading-relaxed">
