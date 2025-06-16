@@ -20,7 +20,7 @@ const About = () => {
             <div className="animate-fade-in">
               <div className="bg-gradient-to-br from-primary/10 to-purple-100 rounded-2xl p-8 hover-scale">
                 <img
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face"
+                  src="https://cdn.poehali.dev/files/83b2aa33-adac-4336-9cb0-4ec7c0991b78.jpg"
                   alt="Веб-дизайнер"
                   className="w-full h-64 object-cover rounded-xl"
                 />
