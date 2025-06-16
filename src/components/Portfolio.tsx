@@ -27,7 +27,7 @@ const Portfolio = () => {
     <section id="portfolio" className="py-20 bg-gray-50">
       <div className="container mx-auto px-6">
         <h2 className="text-5xl font-bold text-center mb-16 font-montserrat">
-          Портфолио
+          Кейсы
         </h2>
 
         <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
