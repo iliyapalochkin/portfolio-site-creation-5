@@ -48,7 +48,7 @@ const Services = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-5xl font-bold mb-6 font-montserrat">
-            <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-slate-900">
               Мои услуги
             </span>
           </h2>
@@ -64,7 +64,7 @@ const Services = () => {
               className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover-scale animate-fade-in border border-gray-100"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center mb-6">
+              <div className="w-16 h-16 from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center mb-6 bg-slate-900">
                 <Icon
                   name={service.icon as any}
                   size={24}
